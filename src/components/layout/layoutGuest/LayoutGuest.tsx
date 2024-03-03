@@ -24,7 +24,7 @@ const LayoutGuest: FC<Props> = ({ children }) => {
 			<div className={s.inner}>
 				<div className={s.logo}>
 					<img
-						src='/src/assets/photo/logoWhite.png'
+						src='/src/assets/photo/logoBlack.png'
 						alt='logo'
 						draggable={false}
 					/>

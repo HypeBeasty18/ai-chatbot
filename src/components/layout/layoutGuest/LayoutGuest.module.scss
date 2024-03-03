@@ -6,6 +6,7 @@
 	height: 100vh;
 	overflow: hidden;
 	@apply bg-black;
+	padding-inline: 10px;
 
 	.smokes {
 		top: 0;
@@ -13,6 +14,7 @@
 		z-index: 0;
 		span {
 			position: absolute;
+			user-select: none;
 
 			&:first-child {
 				z-index: 3;
@@ -20,7 +22,6 @@
 				left: 10%;
 				scale: 1.5;
 				filter: blur(100%);
-
 			}
 
 			&:nth-child(2) {
@@ -36,28 +37,33 @@
 				bottom: -40%;
 				scale: 1.5;
 				filter: blur(100%);
-
 			}
 		}
 	}
 
 	.inner {
-		margin: 0 auto;
-		margin-top: 10%;
-		padding: 20px;
-		padding-inline: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+		padding: 30px;
+		padding-inline: 20px;
+		max-width: 350px;
 		@apply rounded-default;
 		@apply bg-white;
 		z-index: 1;
 
 		.logo {
-			margin-bottom: 20px;
+			margin-bottom: 40px;
+			user-select: none;
+
 			img {
 				height: 60px;
 			}
 		}
 
 		.children {
+			width: 100%;
 		}
 	}
 }
