@@ -1,7 +1,8 @@
-import Chat from "pages/Chat";
-import Coder from "pages/Coder";
-import SignIn from "pages/SignIn";
-import SignUp from "pages/SignUp";
+import Chat from "components/screens/chat/Chat";
+import Coder from "components/screens/coder/Coder";
+import SignIn from "components/screens/signIn/SignIn";
+import SignUp from "components/screens/signUp/SignUp";
+
 
 
 

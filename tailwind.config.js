@@ -15,6 +15,7 @@ export default {
         purple: '#7365FF',
         darkPurple: '#493FAF',
         grey: 'grey',
+				lightGrey: 'lightGrey'
       },
 			fontFamily: {
 				lato: ['Lato', 'sans-serif'],

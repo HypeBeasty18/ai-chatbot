@@ -31,3 +31,13 @@ html, body {
   @apply font-roboto;
 }
 
+input:-webkit-autofill,
+input:-internal-autofill-selected {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.error{
+  position: absolute;
+  color: red;
+  margin-top: 5px;
+}
