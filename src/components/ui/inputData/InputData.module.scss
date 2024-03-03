@@ -1,0 +1,29 @@
+.container {
+  position: relative;
+	margin-bottom: 12px;
+	width: 100%;
+
+
+	.inputCont {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+		padding: 10px;
+		@apply rounded-small;
+		outline: lightgrey 1px solid;
+		width: 100%;
+		background-color: white;
+    font-size: 16px;
+
+		input {
+			width: 100%;
+		}
+
+		&:hover {
+			outline: 1px solid #7365FF;
+		}
+		&:focus-within {
+			outline: 1px solid #7365FF;
+		}
+	}
+}
