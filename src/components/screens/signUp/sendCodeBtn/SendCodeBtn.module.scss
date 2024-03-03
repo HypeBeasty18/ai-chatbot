@@ -1,0 +1,26 @@
+.codeBtn {
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	@apply rounded-small;
+	outline: lightgrey 1px solid;
+	padding: 10px;
+	margin-left: 10px;
+	white-space: nowrap;
+	display: flex;
+	gap: 5px;
+	&:focus{
+		outline: 1px solid lightgrey;
+
+	}
+}
+
+.disabled {
+	color: lightgrey;
+}
+
+.enabled {
+	&:active {
+		outline: 1px solid #7365ff;
+	}
+}
