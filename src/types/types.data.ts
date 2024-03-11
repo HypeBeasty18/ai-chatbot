@@ -8,10 +8,15 @@ export type SignUpInput = {
 }
 
 export interface FormFields {
-	username: string;
-	password: string ;
-	confirmPwd: string;
-	confirmEmail: number;
+	username: string
+	password: string
+	confirmPwd: string
+	confirmEmail: number
+}
+
+export type SignInInput = {
+	username: string
+	password: string
 }
 
 export interface InputData {
@@ -20,7 +25,5 @@ export interface InputData {
 	name: 'password' | 'username' | 'confirmPwd' | 'confirmEmail'
 	error: string | undefined
 	autoComplete: string
-	register: UseFormRegister<FormFields>
+	register: UseFormRegister<FormFields | SignInInput>
 }
-
-

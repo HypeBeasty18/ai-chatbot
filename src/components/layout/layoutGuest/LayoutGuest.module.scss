@@ -48,7 +48,6 @@
 		margin: auto;
 		padding: 30px;
 		padding-inline: 20px;
-		max-width: 350px;
 		@apply rounded-default;
 		@apply bg-white;
 		z-index: 1;
@@ -63,7 +62,7 @@
 		}
 
 		.children {
-			width: 100%;
+			width: 310px;
 		}
 	}
 }

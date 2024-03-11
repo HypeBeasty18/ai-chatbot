@@ -1,7 +1,7 @@
 import { $auth } from 'api/api'
-import { SignUpInput } from 'types/types.data'
+import { SignInInput, SignUpInput } from 'types/types.data'
 
-export const signUp = {
+export const Auth = {
 	async SendCode(userData: SignUpInput) {
 		try {
 			const res = await $auth.post('/', {
@@ -13,6 +13,16 @@ export const signUp = {
 		}
 	},
 	async CreateUser(userData: SignUpInput) {
+		try {
+			const res = await $auth.post('/', {
+				userData
+			})
+			return res.data
+		} catch (error) {
+			throw new Error()
+		}
+	},
+	async SignInUse(userData: SignInInput) {
 		try {
 			const res = await $auth.post('/', {
 				userData
